@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>オセロ対戦ゲーム</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>オセロ対戦ゲーム</h1>
+      <p>黒から開始します。置ける場所はハイライトされます。</p>
+    </header>
+
+    <section class="status-panel">
+      <div class="status" id="turn-status">手番: 黒</div>
+      <div class="score">
+        <span>黒: <strong id="black-score">2</strong></span>
+        <span>白: <strong id="white-score">2</strong></span>
+      </div>
+    </section>
+
+    <section class="board" id="board" aria-label="オセロ盤" role="grid"></section>
+
+    <section class="controls">
+      <button id="reset-button">リセット</button>
+      <button id="pass-button">パス</button>
+    </section>
+
+    <section class="log">
+      <h2>ゲームログ</h2>
+      <ol id="log-list"></ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
